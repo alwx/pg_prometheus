@@ -41,7 +41,7 @@ PGXS := $(shell $(PG_CONFIG) --pgxs)
 EXTRA_CLEAN = $(EXT_SQL_FILE) $(DEPS)
 
 DOCKER_IMAGE_NAME=pg_prometheus
-ORGANIZATION=timescale
+ORGANIZATION=alwxx
 GIT_VERSION=$(shell git describe --always | sed 's|v\(.*\)|\1|')
 GIT_BRANCH=$(shell git rev-parse --abbrev-ref HEAD)
 
